@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Light Foot - Mateusz Knol</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="dist/css/main.min.css">
+</head>
+
+<body>
+
+	<!-- burger przy nawigacji mobilnej -->
+	<button class="burger-btn">
+		<div class="burger-btn__box">
+			<div class="burger-btn__bars"></div>
+		</div>
+	</button>
+
+	<!-- nawigacja mobilna -->
+	<nav class="nav">
+		<div class="nav__items">
+			<a href="#about" class="nav__item">O mnie</a>
+			<a href="#photos" class="nav__item">Zdjęcia</a>
+			<a href="#blog" class="nav__item">Wyprawy</a>
+			<a href="#contact" class="nav__item">Kontakt</a>
+
+			<!-- <div class="nav__item nav__flags">
+				<a href="#contact"><img class="nav__flag" src="./dist/img/united-kingdom.png" alt=""></a>
+				<a href="#contact"><img src="./dist/img/poland.png" alt=""></a>
+			</div> -->
+		</div>
+	</nav>
+
+	<!-- nawigacja desktopowa -->
+	<nav class="nav-desktop">
+		<div class="nav-desktop__wrapper">
+			<a href="#" class="nav-desktop__logo">Light Foot</a>
+			<div class="nav-desktop__items">
+				<a href="#about" class="nav-desktop__item">O mnie</a>
+				<a href="#photos" class="nav-desktop__item">Zdjęcia</a>
+				<a href="#blog" class="nav-desktop__item">Wyprawy</a>
+				<a href="#contact" class="nav-desktop__item">Kontakt</a>
+			</div>
+			<div class="nav-desktop__flags">
+				<a href="#contact"><img class="nav__flag" src="./dist/img/united-kingdom.png" alt=""></a>
+				<a href="#contact"><img src="./dist/img/poland.png" alt=""></a>
+			</div>
+		</div>
+	</nav>
+
+
+
+	<!-- header ze zdjęciem i tytułem + logo w nawigacji -->
+	<header class="header background-photo">
+		<a href="#" class="header__logo">Light Foot</a>
+		<h1 class="header__heading hidden">Mateusz Knol</h1>
+		<p class="header__text hidden">Tour leader &bull; Guide &bull; Interpreter</p>
+		<a href="#about" class="header__btn-scroll hidden" title="Scroll Down"><i
+				class="fa-solid fa-angle-down"></i></a>
+		<div class="white-block white-block-left"></div>
+	</header>
+
+	<!-- main z opisami i zdjęciami -->
+	<main class="main">
+		<section class="about section-padding section white-section" id="about">
+			<div class="wrapper">
+				<h2 class="section-heading hidden">O mnie</h2>
+				<div class="about__box">
+					<div class="about__box-img hidden">
+						<img src="./dist/img/about.jpg" alt="Mateusz Knol" class="about__img">
+					</div>
+					<div class="about__box-text hidden">
+						<h3 class="about__title">Nazywam się Mateusz Knol.</h3>
+						<div class="about__text">
+							<p>Jestem podróżnikiem, tłumaczem oraz pilotem wycieczek zagranicznych. Uprawnienia pilota
+								wycieczek uzyskałem w 2000 roku.</p>
+							<p>Posługuję się na poziomie profesjonalnym francuskim, angielskim oraz hiszpańskim, a także
+								na poziomie średniozaawansowanym językiem arabskim i włoskim.</p>
+							<p>Znajomość języków obcych rzeczywiście otwiera wiele ścieżek poznawczych. Uważam, że ta
+								umiejętność jest moim największym kapitałem.</p>
+							<p>Podróżuję po całym świecie ze szczególnym umiłowaniem krajów arabskich, Ameryki
+								Łacińskiej,
+								Bliskiego i Dalekiego Wschodu.</p>
+						</div>
+					</div>
+				</div>
+				<div class="about__box">
+
+					<div class="about__box-img--right hidden">
+						<img src="./dist/img/experiance.jpg" alt="Afryka" class="about__img">
+					</div>
+
+					<div class="about__box-text hidden">
+						<h3 class="about__title">Początki</h3>
+						<div class="about__text">
+							<p>Ukończyłem filologię romańską w Uniwersytecie Łódzkim oraz techniki tłumaczeń w
+								Uniwersytecie Marc Bloc w Strasbourgu. Podyplomowo ukończyłem także MBA (Uniwersytet
+								Łódzki / University Of Maryland).</p>
+							<p>Pracę zagranicą zacząłem dosyć wcześnie – podczas studiów. Od 1996 r zacząłem spędzać
+								wakacje w USA pracując z młodzieżą z całego świata. Zarobione pieniądze wydawałem na
+								podróżowanie – początkowo po USA, a potem do wielu ciekawych krajów globu.</p>
+							<p>Wkrótce ukończyłem kurs przewodników turystyki. I stało się. Zaczęło się od
+								rezydentur na Wyspach Kanaryjskich, w Hiszpanii kontynentalnej, na Wyspach Greckich
+								i w Maroku, gdzie pracowałem przez 5 lat.</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<section class="experience background-photo section-padding section white-section">
+			<div class="experience__box hidden">
+				<div class="experience__element">
+					<p class="experience__number">5</p>
+					<p>Poznanych języków</p>
+				</div>
+
+				<div class="experience__element">
+					<p class="experience__number">23</p>
+					<p>Lata doświadczenia</p>
+				</div>
+
+				<div class="experience__element">
+					<p class="experience__number">120+</p>
+					<p>Odwiedzonych krajów</p>
+				</div>
+
+				<div class="experience__element">
+					<p class="experience__number">400+</p>
+					<p>Poprowadzonych wycieczek</p>
+				</div>
+
+
+			</div>
+
+
+
+		</section>
+
+		<section class="about section-padding section white-section" id="about">
+			<div class="wrapper">
+				<div class="about__box">
+					<div class="about__box-img hidden">
+						<img src="./dist/img/about3.jpg" alt="Mateusz Knol" class="about__img">
+					</div>
+					<div class="about__box-text hidden">
+						<h3 class="about__title">Doświadczenie</h3>
+						<div class="about__text">
+							<p>Od 2000 roku zawodowo pilotuje grupy turystyczne, z którymi dotarłem do ponad 120
+								krajów świata. Przygodę w turystyce rozpocząłem jako opiekun młodzieży w USA,
+								rezydent w Hiszpanii, na Wyspach Kanaryjskich, w Grecji i Maroko, spędzając za
+								granicą ponad 5 lat. Następnie prowadziłem grupy trampingowe i wyjazdy egzotyczne
+								dla turystów indywidualnych. </p>
+							<p>Pracę zagranicą zacząłem dosyć wcześnie – podczas studiów. Od 1996 r zacząłem spędzać
+								wakacje w USA pracując z młodzieżą z całego świata. Zarobione pieniądze wydawałem na
+								podróżowanie – początkowo po USA, a potem do wielu ciekawych krajów globu.</p>
+							<p>Od roku 2005 coraz częściej gośćmi na moich wyjazdach stawali się pracownicy
+								korporacji. W najbardziej aktywnych latach pracy pilockiej spędzałem ponad 300 dni w
+								roku z grupami na wyjazdach zagranicznych na całym świecie. W swojej karierze
+								poprowadziłem ponad czterysta grup, dla ponad 20 biur podróży i ponad 70 klientów
+								korporacyjnych.</p>
+							<p>
+								Dziś specjalizuję się w grupach indywidualnych VIP oraz wyjazdach incentive. Jestem
+								zapraszany do współpracy przy najbardziej prestiżowych eventach na rynku i
+								praktycznie nie ma branży dla której nie prowadziłby wyjazdów.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="about__box">
+					<div class="about__box-img--right hidden">
+						<img src="./dist/img/about4.jpg" alt="Afryka" class="about__img">
+					</div>
+					<div class="about__box-text about__box-text--right hidden">
+						<h3 class="about__title">Zainteresowania</h3>
+						<div class="about__text">
+							<p>Wychowałem się w domu artystów, w duchu zawodów wolnych. Tata Kazimierz Knol był solistą
+								i pierwszym tancerzem baletu Teatru Wielkiego w Łodzi. Mama Urszula Klechta – Knol jest
+								artystą malarzem http://urszulaklechta.pl. Choć Tata nigdy mnie specjalnie nie uczył sam
+								zacząłem interesować się muzyką i tańcem. Traf chciał, że najbardziej do mnie przemówił
+								kubański „tambor”, afrykańskie „djembe” i tańca karaibskie.</p>
+							<p>Jedną z wielu moich pasji pozostaje sport. Jako młody chłopak, aż do wieku seniorskiego,
+								byłem zawodnikiem picerwszoleigowej drużyny piłki wodnej łódzkiej Anilany. Poznałem smak
+								ciężkiej pracy, wielu sukcesów jak i wielu porażek – tego uczy sport.</p>
+							<p>Zafascynowany jestem wspinaczką i górami. Tam odnajduję mojego osobistego „ducha
+								inspiracji”.</p>
+							<p>Dzięki mojej żonie, przesłodkiej Agnieszce zainteresowała mnie duchowość oraz systemy
+								filozoficzno-religijne Wschodu: buddyzm, hinduizm czy sufizm. W sumie uważam, że
+								największym wyzwaniem człowieka jest poznanie „siebie”.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+	</main>
+
+
+
+	<footer class="footer">
+
+
+		<div class="footer__copyright">
+			Copyright &copy; 2023 <strong><span>Light Foot</span></strong>. Wszelkie prawa zastrzeżone. | <a
+				href="../privacy_policy.html">Polityka prywatności oraz Cookies</a>
+		</div>
+	</footer>
+
+	<script src="https://kit.fontawesome.com/9cdd864807.js" crossorigin="anonymous"></script>
+	<script src="src/js/main.js"></script>
+	<script defer src="src/js/scroll-animation.js"></script>
+
+</body>
+
+</html>
