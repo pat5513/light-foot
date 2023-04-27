@@ -33,7 +33,7 @@
 .background-photo {
 	background-size: cover;
 	background-position: center;
-	background-attachment: fixed;
+	background-attachment: scroll;
 }
 
 .section-heading {
@@ -55,7 +55,6 @@
 	.section-heading {
 		font-size: 3.6rem;
 	}
-
 }
 
 @media (min-width: 992px) {
