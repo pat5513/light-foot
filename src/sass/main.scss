@@ -204,13 +204,12 @@ body {
 
 	&__logo {
 		position: absolute;
-		top: 20px;
+		top: 30px;
 		left: 20px;
-		font-family: "Teko", sans-serif;
-		font-size: 4rem;
-		color: $main-color;
-		text-decoration: none;
-		text-transform: uppercase;
+
+		img {
+			height: 40px;
+		}
 	}
 
 	&__heading {
@@ -375,9 +374,6 @@ body {
 
 		&__logo {
 			padding: 10px 0 0 30px;
-			font-family: "Teko", sans-serif;
-			font-size: 3em;
-			color: $main-color;
 		}
 
 		&__items {
@@ -390,7 +386,7 @@ body {
 		}
 
 		&__flags {
-			padding: 10px 30px 0 0;
+			padding: 10px 30px 0 118px;
 			display: flex;
 		}
 
