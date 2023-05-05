@@ -177,8 +177,30 @@ body {
 	height: 100vh;
 	text-align: center;
 	color: $white;
+	transition: 0.5s;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
 		url("../img/hero-bg.jpg");
+
+	.word::after {
+		content: "";
+		animation: wordChange 7s linear infinite;
+		animation-fill-mode: forwards;
+	}
+
+	@keyframes wordChange {
+		0% {
+			content: "Tour leader";
+		}
+		33% {
+			content: "Guide";
+		}
+		66% {
+			content: "Interpreter";
+		}
+		100% {
+			content: "Travel specialist";
+		}
+	}
 
 	&__logo {
 		position: absolute;
@@ -199,10 +221,10 @@ body {
 
 	&__text {
 		font-family: "Poppins", sans-serif;
-		font-size: 1.7rem;
+		font-size: 2.4rem;
 		text-transform: uppercase;
 		width: fit-content;
-		font-weight: 300;
+		font-weight: 600;
 		letter-spacing: 2px;
 	}
 
@@ -436,7 +458,11 @@ body {
 		}
 
 		&__text {
-			font-size: 1.3em;
+			font-size: 2em;
+		}
+
+		&__text2 {
+			font-size: 1.2em;
 		}
 	}
 
