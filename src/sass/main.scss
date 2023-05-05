@@ -188,6 +188,7 @@ body {
 		font-size: 4rem;
 		color: $main-color;
 		text-decoration: none;
+		text-transform: uppercase;
 	}
 
 	&__heading {
@@ -197,6 +198,16 @@ body {
 	}
 
 	&__text {
+		font-family: "Poppins", sans-serif;
+		font-size: 1.7rem;
+		text-transform: uppercase;
+		width: fit-content;
+		font-weight: 300;
+		letter-spacing: 2px;
+	}
+
+	&__text2 {
+		margin-top: 20px;
 		font-family: "Poppins", sans-serif;
 		font-size: 1.4rem;
 		text-transform: uppercase;
@@ -293,7 +304,7 @@ body {
 .footer {
 	position: relative;
 	width: 100%;
-	background: $main-olive;
+	background: $main-footer;
 	min-height: 100px;
 	padding: 20px 50px;
 	display: flex;
