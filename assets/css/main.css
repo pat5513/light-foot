@@ -1,0 +1,478 @@
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.btn-special-animation {
+  position: relative;
+  transition: background-color 0.3s;
+  overflow: hidden;
+  z-index: 0;
+}
+.btn-special-animation::before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s;
+  z-index: -1;
+}
+.btn-special-animation:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.background-photo {
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+}
+
+.section-heading {
+  position: relative;
+  margin-bottom: 1em;
+  font-size: 3rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  color: #b2d842;
+  letter-spacing: 2px;
+}
+
+.section-padding {
+  padding: 4em 2em;
+}
+
+@media (min-width: 768px) {
+  .section-heading {
+    font-size: 3.6rem;
+  }
+}
+@media (min-width: 992px) {
+  .section-heading {
+    font-size: 4.8rem;
+  }
+  .section-padding {
+    padding: 6em 2em;
+  }
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+}
+
+.hidden {
+  opacity: 0;
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+}
+
+.burger-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 1em;
+  background: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  z-index: 1000;
+}
+.burger-btn:focus {
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+}
+.burger-btn:hover .burger-btn__bars::after,
+.burger-btn:hover .burger-btn__bars::before {
+  width: 100%;
+}
+.burger-btn__box {
+  position: relative;
+  width: 40px;
+  height: 30px;
+}
+.burger-btn__bars, .burger-btn__bars::after, .burger-btn__bars::before {
+  position: absolute;
+  right: 0;
+  height: 3px;
+  content: "";
+  background-color: #fff;
+  transition: width 0.3s;
+}
+.burger-btn__bars {
+  width: 100%;
+}
+.burger-btn__bars::after {
+  top: 13px;
+  width: 60%;
+}
+.burger-btn__bars::before {
+  top: 27px;
+  width: 30%;
+  transition-delay: 0.1s;
+}
+
+.nav-desktop {
+  display: none;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  transform: translateX(100%);
+  transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
+  background-image: linear-gradient(45deg, rgb(206, 248, 80), rgb(118, 143, 44));
+  z-index: 100;
+}
+.nav--active {
+  transform: translateX(0);
+}
+.nav__item {
+  position: relative;
+  display: block;
+  margin: 0.5em 0;
+  padding: 0.5em 2em;
+  font-size: 2.8rem;
+  color: #fff;
+  text-decoration: none;
+}
+.nav__item::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  transform: scaleY(0);
+  background-color: #fff;
+  transition: transform 0.3s;
+  content: "";
+}
+.nav__item:hover::before {
+  transform: scaleY(1);
+}
+.nav__flags {
+  padding-top: 50px;
+}
+.nav__flag {
+  padding-right: 20px;
+}
+
+@keyframes navItemsAnimation {
+  from {
+    transform: translateX(200%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.nav-items-animation {
+  animation: navItemsAnimation 1s both;
+}
+
+.black-bars-color,
+.black-bars-color::after,
+.black-bars-color::before {
+  background-color: #353535;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2em;
+  height: 100vh;
+  text-align: center;
+  color: #fff;
+  transition: 0.5s;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero-bg.jpg");
+}
+.header .word::after {
+  content: "";
+  animation: wordChange 7s linear infinite;
+  animation-fill-mode: forwards;
+}
+@keyframes wordChange {
+  0% {
+    content: "Tour leader";
+  }
+  33% {
+    content: "Guide";
+  }
+  66% {
+    content: "Interpreter";
+  }
+  100% {
+    content: "Travel specialist";
+  }
+}
+.header__logo {
+  position: absolute;
+  top: 30px;
+  left: 20px;
+}
+.header__logo img {
+  height: 40px;
+}
+.header__heading {
+  font-family: "Poppins", sans-serif;
+  font-size: 4.4rem;
+  font-weight: 700;
+}
+.header__text {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.header__text2 {
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+.header__btn-scroll {
+  padding: 2.5rem;
+  transition: 0.4s;
+  color: rgba(255, 255, 255, 0.6);
+  animation: mover 1s infinite alternate;
+}
+.header__btn-scroll i {
+  font-size: 48px;
+}
+.header__btn-scroll:hover {
+  color: #b2d842;
+}
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+.about p {
+  padding-bottom: 0.5em;
+  text-align: justify;
+}
+.about__box {
+  display: flex;
+  flex-direction: column;
+  margin: 2em 0;
+}
+.about__img {
+  width: 100%;
+  margin-bottom: 1em;
+}
+.about__title {
+  margin-bottom: 0.5em;
+}
+.about__text {
+  font-size: 1.4rem;
+}
+
+.experience {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/experience-bg.jpg");
+}
+.experience__element {
+  margin-bottom: 3em;
+}
+.experience__number {
+  font-size: 3em;
+  padding: 0;
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer__copyright {
+  color: #fff;
+  text-align: center;
+}
+
+@media (min-width: 991px) {
+  html {
+    font-size: 7px;
+  }
+  .burger-btn {
+    display: none;
+  }
+  .nav {
+    display: none;
+  }
+  .nav-desktop {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    height: auto;
+    background-image: none;
+    z-index: 95;
+    transition: 0.3s;
+  }
+  .nav-desktop__wrapper {
+    width: 100%;
+    max-width: 1600px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-desktop__logo {
+    padding: 10px 0 0 30px;
+  }
+  .nav-desktop__items {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+  }
+  .nav-desktop__flags {
+    padding: 10px 30px 0 118px;
+    display: flex;
+  }
+  .nav-desktop img {
+    height: 30px;
+  }
+  .nav-desktop__item, .nav-desktop__item:focus {
+    margin: 1em 0;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 15px;
+  }
+  .nav-desktop a,
+  .nav-desktop a:focus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    white-space: nowrap;
+    transition: 0.3s;
+    letter-spacing: 2px;
+    text-decoration: none;
+  }
+  .nav-desktop i {
+    font-size: 12px;
+    line-height: 0;
+    margin-left: 5px;
+  }
+  a:hover,
+  .active,
+  .active:focus,
+  li:hover {
+    color: #b2d842;
+  }
+  .sticky {
+    background: rgba(25, 28, 31, 0.6);
+    position: fixed;
+  }
+  .header__logo {
+    display: none;
+    position: fixed;
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 99;
+    left: 80px;
+  }
+  .header__logo:hover {
+    color: #cff362;
+  }
+  .header__heading {
+    font-size: 4em;
+  }
+  .header__text {
+    font-size: 2em;
+  }
+  .header__text2 {
+    font-size: 1.2em;
+  }
+  .about__box {
+    flex-direction: row;
+    margin: 5em 0;
+  }
+  .about__box-img {
+    margin-right: 5em;
+    width: 150%;
+  }
+  .about__box-img--right {
+    margin-left: 5em;
+    width: 150%;
+    order: 1;
+  }
+  .about__box-text {
+    width: 180%;
+  }
+  .about__title {
+    font-size: 2em;
+  }
+  .about__text {
+    font-size: 1.8em;
+  }
+  .about__img {
+    width: 100%;
+  }
+  .experience__box {
+    font-size: 1.3em;
+    display: flex;
+    flex-direction: row;
+    letter-spacing: 1px;
+  }
+  .experience__element {
+    padding: 0 3em;
+  }
+}/*# sourceMappingURL=main.css.map */
