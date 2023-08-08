@@ -329,18 +329,16 @@ body {
 .footer {
   position: relative;
   width: 100%;
-  background: #fff;
+  background: #81bc46;
   min-height: 100px;
   padding: 20px 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: #334155;
-  font-size: 16px;
-  border-top: 1px solid #e2e8f0;
 }
 .footer__copyright {
+  color: #fff;
   text-align: center;
 }
 

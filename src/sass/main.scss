@@ -332,9 +332,11 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	color: #334155;
+	font-size: 16px;
+	border-top: 1px solid #e2e8f0;
 
 	&__copyright {
-		color: $white;
 		text-align: center;
 	}
 }

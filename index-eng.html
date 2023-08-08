@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Light Travel - Mateusz Knol</title>
+	<link rel="icon" type="image/x-icon" href="./dist/favicon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="dist/css/main.min.css">
+</head>
+
+<body>
+
+	<!-- burger przy nawigacji mobilnej -->
+	<button class="burger-btn">
+		<div class="burger-btn__box">
+			<div class="burger-btn__bars"></div>
+		</div>
+	</button>
+
+	<!-- nawigacja mobilna -->
+	<nav class="nav">
+		<div class="nav__items">
+			<a href="#about" class="nav__item">About</a>
+			<a href="https://light-travel.eu/lt/lt/gallery/" class="nav__item">Photos</a>
+			<!-- <a href="#blog" class="nav__item">Wyprawy</a> -->
+			<a href="#contact" class="nav__item">Contact</a>
+
+			<!-- <div class="nav__item nav__flags">
+				<a href="#contact"><img class="nav__flag" src="./dist/img/united-kingdom.png" alt=""></a>
+				<a href="#contact"><img src="./dist/img/poland.png" alt=""></a>
+			</div> -->
+		</div>
+	</nav>
+
+	<!-- nawigacja desktopowa -->
+	<nav class="nav-desktop">
+		<div class="nav-desktop__wrapper">
+			<a href="#" class="nav-desktop__logo"><img src="./dist/img/logo-nastrone-1.png" alt="logo"></a>
+			<div class="nav-desktop__items">
+				<a href="#about" class="nav-desktop__item">About</a>
+				<a href="https://light-travel.eu/lt/lt/gallery/" class="nav-desktop__item">Photos</a>
+				<!-- <a href="#blog" class="nav-desktop__item">Wyprawy</a> -->
+				<a href="#contact" class="nav-desktop__item">Contact</a>
+			</div>
+			<div class="nav-desktop__flags">
+				<a href="#contact"><img class="nav__flag" src="./dist/img/united-kingdom.png" alt="uk flag"></a>
+				<a href="#contact"><img src="./dist/img/poland.png" alt="polish flag"></a>
+			</div>
+		</div>
+	</nav>
+
+
+
+	<!-- header ze zdjęciem i tytułem + logo w nawigacji -->
+	<header class="header background-photo">
+		<a href="#" class="header__logo"><img src="./dist/img/logo-nastrone-1.png" alt="logo"></a>
+		<h1 class="header__heading hidden">Mateusz Knol</h1>
+		<p class="header__text hidden">
+			<span class="word"></span>
+		<p class="header__text2 hidden">english &bull; french &bull; spanish<br>italian &bull; arabic &bull;
+			portuguese</p>
+		<a href="#about" class="header__btn-scroll hidden" title="Scroll Down"><i
+				class="fa-solid fa-angle-down"></i></a>
+		<div class="white-block white-block-left"></div>
+	</header>
+
+	<!-- main z opisami i zdjęciami -->
+	<main class="main">
+		<section class="about section-padding section white-section" id="about">
+			<div class="wrapper">
+				<h2 class="section-heading hidden">About me</h2>
+				<div class="about__box">
+					<div class="about__box-img hidden">
+						<img src="./dist/img/about.jpg" alt="Mateusz Knol" class="about__img">
+					</div>
+					<div class="about__box-text hidden">
+						<h3 class="about__title">My name is Mateusz Knol.</h3>
+						<div class="about__text">
+							<p>I am a traveler, translator and tour leader. I obtained my tour guide license in 2000.
+							</p>
+							<p>I am fluent in English, French, Spanish, Italian and Arabic.
+								I know Portuguese and Russian on a communicative level.</p>
+							<p>Knowledge of foreign languages really opens up many cognitive paths.
+								I consider this skill to be my greatest asset.</p>
+							<p>I travel around the world with a special love for Arab countries, Latin America, the
+								Middle and Far East.</p>
+						</div>
+					</div>
+				</div>
+				<div class="about__box">
+
+					<div class="about__box-img--right hidden">
+						<img src="./dist/img/experiance.jpg" alt="Afryka" class="about__img">
+					</div>
+
+					<div class="about__box-text hidden">
+						<h3 class="about__title">Beginnings</h3>
+						<div class="about__text">
+							<p>I graduated in Romance philology at the University of Lodz and translation techniques at
+								the Marc Bloc University in Strasbourg. I also completed a post-graduate MBA (University
+								of Lodz / University Of Maryland).</p>
+							<p>I started working abroad quite early - during my studies. From 1996 I started spending my
+								holidays in the USA working with young people from all over the world. I spent the money
+								I earned on traveling - initially around the USA, and then to many interesting countries
+								around the world.</p>
+							<p>Soon I completed a course of tourism guides. And it hapenned. It started with residencies
+								in the Canary Islands, mainland Spain, the Greek Islands and Morocco, where I worked for
+								5 years.</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<section class="experience background-photo section-padding section white-section">
+			<div class="experience__box hidden">
+
+				<!-- <div class="experience__element">
+					<p class="experience__number">5</p>
+					<p>Poznanych języków</p>
+				</div> -->
+
+				<div class="experience__element">
+					<p class="experience__number">20+</p>
+					<p>years of experience</p>
+				</div>
+
+				<div class="experience__element">
+					<p class="experience__number">140+</p>
+					<p>visited countries</p>
+				</div>
+
+				<div class="experience__element">
+					<p class="experience__number">400+</p>
+					<p>led projects</p>
+				</div>
+
+
+			</div>
+
+
+
+		</section>
+
+		<section class="about section-padding section white-section" id="about">
+			<div class="wrapper">
+				<div class="about__box">
+					<div class="about__box-img hidden">
+						<img src="./dist/img/about3.jpg" alt="Mateusz Knol" class="about__img">
+					</div>
+					<div class="about__box-text hidden">
+						<h3 class="about__title">Experience</h3>
+						<div class="about__text">
+							<p>Since 2000, I have been professionally leading tourist groups with which I have reached
+								over 120 countries around the world. I started my adventure in tourism as a youth tutor
+								in the USA, a resident in Spain, the Canary Islands, Greece and Morocco, spending over 5
+								years abroad. Then I led tramping groups and exotic trips for individual tourists. </p>
+							<p>Since 2005, corporate employees have become more and more frequent guests on my trips. In
+								the most active years of my work as a pilot, I spent over 300 days a year with groups on
+								trips abroad around the world. In my career, I have led over four hundred groups for
+								over 20 travel agencies and over 70 corporate clients.</p>
+							<p>
+								Today I specialize in individual VIP groups and incentive trips. I am invited to
+								cooperate with the most prestigious events on the market and there is practically no
+								industry for which I would not conduct trips.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="about__box">
+					<div class="about__box-img--right hidden">
+						<img src="./dist/img/about4.jpg" alt="Afryka" class="about__img">
+					</div>
+					<div class="about__box-text about__box-text--right hidden">
+						<h3 class="about__title">Hobbies</h3>
+						<div class="about__text">
+							<p>I grew up in a house of artists, in the spirit of freelance professions. Father Kazimierz
+								Knol was a soloist and the first dancer of the ballet of the Grand Theater in Łódź.
+								Mother Urszula Klechta-Knol is a painter: http://urszulaklechta.pl. Although Dad never
+								taught me much, I became interested in music and dance myself. As luck would have it,
+								the Cuban "tambor", African "djembe" and Caribbean dances spoke to me the most.</p>
+							<p>One of my many passions is sport. As a young boy, until the senior age, I was a player of
+								the first-league water polo team of Anilana in Łódź. I got to know the taste of hard
+								work, many successes and many failures - this is what sport teaches.</p>
+							<p>I am fascinated by climbing and mountains. There I find my personal "spirit of
+								inspiration".</p>
+							<p>Thanks to my wife, Agnieszka, I became interested in spirituality and philosophical and
+								religious systems of the East: Buddhism, Hinduism and Sufism. All in all, I believe that
+								the greatest challenge for a person is to know "yourself".</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+	</main>
+
+
+
+	<footer class="footer">
+
+
+		<div class="footer__copyright">
+			Copyright &copy; 2023 <strong><span>Light Foot</span></strong>. All rights reserved. | <a
+				href="https://light-travel.eu/lt/lt/privacy-policy/">Privacy Policy and Cookies</a>
+		</div>
+	</footer>
+
+	<script src="https://kit.fontawesome.com/9cdd864807.js" crossorigin="anonymous"></script>
+	<script src="dist/js/main.min.js"></script>
+	<script defer src="dist/js/scroll-animation.min.js"></script>
+
+</body>
+
+</html>
